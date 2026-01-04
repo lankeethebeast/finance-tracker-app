@@ -1,0 +1,890 @@
+2025-12-15 14:31:44,213 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 14:31:44,214 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 14:31:44,217 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 14:31:46,409 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 14:31:46,415 - werkzeug - INFO -  * Debugger PIN: 360-748-911
+2025-12-15 14:31:57,118 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:31:57] "GET / HTTP/1.1" 200 -
+2025-12-15 14:32:00,892 - __main__ - INFO - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-15 14:32:00,894 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:32:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 14:33:02,050 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:02] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 14:33:02,051 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:02] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 14:33:02,314 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:02] "[31m[1mGET /api/auth/me HTTP/1.1[0m" 401 -
+2025-12-15 14:33:02,360 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:02] "[31m[1mGET /api/auth/me HTTP/1.1[0m" 401 -
+2025-12-15 14:33:06,334 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:06] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 14:33:06,658 - routes.auth_routes - WARNING - Failed login attempt for username: lxnkee
+2025-12-15 14:33:06,659 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:06] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-15 14:33:23,976 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:23] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2025-12-15 14:33:24,532 - routes.auth_routes - INFO - New user registered: lxnkee with role: user
+2025-12-15 14:33:24,535 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:24] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-12-15 14:33:25,884 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:25] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 14:33:26,435 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 14:33:26,435 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:26] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 14:33:26,465 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:26] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:33:26,780 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:26] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:33:26,782 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:26] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:33:26,783 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:26] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:33:26,785 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:26] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:33:27,106 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:27] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:33:27,107 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:27] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:33:27,378 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:27] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:33:47,113 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:47] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:33:47,425 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:33:47,443 - routes.expense_routes - INFO - Expense created successfully: ID 1 for user 1
+2025-12-15 14:33:47,444 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:47] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:33:47,694 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:47] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:33:47,755 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:47] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:33:47,764 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:33:47] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:34:12,785 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:12] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:34:13,033 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:34:13,039 - routes.expense_routes - INFO - Expense created successfully: ID 2 for user 1
+2025-12-15 14:34:13,040 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:13] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:34:13,095 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:13] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:34:13,356 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:13] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:34:13,362 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:13] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:34:34,173 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:34] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:34:34,435 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:34:34,441 - routes.expense_routes - INFO - Expense created successfully: ID 3 for user 1
+2025-12-15 14:34:34,441 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:34] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:34:34,485 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:34] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:34:34,763 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:34] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:34:34,770 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:34:34] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:35:02,265 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:02] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:35:02,533 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:35:02,557 - routes.expense_routes - INFO - Expense created successfully: ID 4 for user 1
+2025-12-15 14:35:02,559 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:02] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:35:02,579 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:02] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:35:02,879 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:02] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:35:02,896 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:02] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:35:16,218 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:16] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:35:16,480 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:35:16,495 - routes.expense_routes - INFO - Expense created successfully: ID 5 for user 1
+2025-12-15 14:35:16,496 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:16] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:35:16,526 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:16] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:35:16,811 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:16] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:35:16,830 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:16] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:35:46,334 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:46] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:35:46,599 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:35:46,617 - routes.expense_routes - INFO - Expense created successfully: ID 6 for user 1
+2025-12-15 14:35:46,618 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:46] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:35:46,659 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:46] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:35:46,942 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:46] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:35:46,951 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:35:46] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:07,617 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:07] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:07,874 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:36:07,880 - routes.expense_routes - INFO - Expense created successfully: ID 7 for user 1
+2025-12-15 14:36:07,881 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:07] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:36:07,947 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:07] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:08,208 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:08] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:08,225 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:08] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:24,549 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:24] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:24,798 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:36:24,803 - routes.expense_routes - INFO - Expense created successfully: ID 8 for user 1
+2025-12-15 14:36:24,804 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:24] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:36:24,861 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:24] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:25,126 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:25] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:25,134 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:25] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:40,677 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:40] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:40,940 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:36:40,956 - routes.expense_routes - INFO - Expense created successfully: ID 9 for user 1
+2025-12-15 14:36:40,957 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:40] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:36:40,987 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:40] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:41,269 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:41] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:41,276 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:41] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:55,999 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:55] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:56,252 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:36:56,261 - routes.expense_routes - INFO - Expense created successfully: ID 10 for user 1
+2025-12-15 14:36:56,262 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:56] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:36:56,313 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:56] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:36:56,577 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:56] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:56,590 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:56] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:36:56,923 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:56] "OPTIONS /api/analytics/predict?days=30 HTTP/1.1" 200 -
+2025-12-15 14:36:56,926 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:56] "OPTIONS /api/analytics/trends?period=monthly HTTP/1.1" 200 -
+2025-12-15 14:36:57,168 - routes.analytics_routes - INFO - Prediction request for user 1: 5 expenses, 30 days
+2025-12-15 14:36:57,168 - routes.analytics_routes - WARNING - Insufficient data for prediction: user 1 has only 5 expenses
+2025-12-15 14:36:57,169 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:57] "[31m[1mGET /api/analytics/predict?days=30 HTTP/1.1[0m" 400 -
+2025-12-15 14:36:57,249 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:36:57] "GET /api/analytics/trends?period=monthly HTTP/1.1" 200 -
+2025-12-15 14:37:27,657 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:27] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:37:27,975 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-15 14:37:27,983 - routes.expense_routes - INFO - Expense created successfully: ID 11 for user 1
+2025-12-15 14:37:27,984 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:27] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-15 14:37:28,240 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 14:37:28,301 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:37:28,308 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 14:37:28,630 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "OPTIONS /api/analytics/predict?days=30 HTTP/1.1" 200 -
+2025-12-15 14:37:28,631 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "OPTIONS /api/analytics/trends?period=monthly HTTP/1.1" 200 -
+2025-12-15 14:37:28,881 - routes.analytics_routes - INFO - Prediction request for user 1: 5 expenses, 30 days
+2025-12-15 14:37:28,881 - routes.analytics_routes - WARNING - Insufficient data for prediction: user 1 has only 5 expenses
+2025-12-15 14:37:28,882 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "[31m[1mGET /api/analytics/predict?days=30 HTTP/1.1[0m" 400 -
+2025-12-15 14:37:28,941 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 14:37:28] "GET /api/analytics/trends?period=monthly HTTP/1.1" 200 -
+2025-12-15 15:09:01,938 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:01] "OPTIONS /api/expenses/10 HTTP/1.1" 200 -
+2025-12-15 15:09:02,210 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: expenses
+[SQL: SELECT expenses.id AS expenses_id, expenses.user_id AS expenses_user_id, expenses.amount AS expenses_amount, expenses.category AS expenses_category, expenses.description AS expenses_description, expenses.transaction_type AS expenses_transaction_type, expenses.date AS expenses_date, expenses.created_at AS expenses_created_at 
+FROM expenses 
+WHERE expenses.id = ? AND expenses.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (10, 1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: expenses
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\expense_routes.py", line 165, in delete_expense
+    expense = Expense.query.filter_by(id=expense_id, user_id=user_id).first()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: expenses
+[SQL: SELECT expenses.id AS expenses_id, expenses.user_id AS expenses_user_id, expenses.amount AS expenses_amount, expenses.category AS expenses_category, expenses.description AS expenses_description, expenses.transaction_type AS expenses_transaction_type, expenses.date AS expenses_date, expenses.created_at AS expenses_created_at 
+FROM expenses 
+WHERE expenses.id = ? AND expenses.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (10, 1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:09:02,429 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:02] "[35m[1mDELETE /api/expenses/10 HTTP/1.1[0m" 500 -
+2025-12-15 15:09:07,623 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:07] "OPTIONS /api/expenses/9 HTTP/1.1" 200 -
+2025-12-15 15:09:07,944 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: expenses
+[SQL: SELECT expenses.id AS expenses_id, expenses.user_id AS expenses_user_id, expenses.amount AS expenses_amount, expenses.category AS expenses_category, expenses.description AS expenses_description, expenses.transaction_type AS expenses_transaction_type, expenses.date AS expenses_date, expenses.created_at AS expenses_created_at 
+FROM expenses 
+WHERE expenses.id = ? AND expenses.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (9, 1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: expenses
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\expense_routes.py", line 165, in delete_expense
+    expense = Expense.query.filter_by(id=expense_id, user_id=user_id).first()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: expenses
+[SQL: SELECT expenses.id AS expenses_id, expenses.user_id AS expenses_user_id, expenses.amount AS expenses_amount, expenses.category AS expenses_category, expenses.description AS expenses_description, expenses.transaction_type AS expenses_transaction_type, expenses.date AS expenses_date, expenses.created_at AS expenses_created_at 
+FROM expenses 
+WHERE expenses.id = ? AND expenses.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (9, 1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:09:07,949 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:07] "[35m[1mDELETE /api/expenses/9 HTTP/1.1[0m" 500 -
+2025-12-15 15:09:12,691 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:12] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:09:12,992 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:12] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:09:12,998 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.id = ?]
+[parameters: ('1',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\auth_routes.py", line 147, in get_current_user
+    user = User.query.get(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in get
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
+    return self.session._get_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.id = ?]
+[parameters: ('1',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:09:13,031 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:13] "[35m[1mGET /api/auth/me HTTP/1.1[0m" 500 -
+2025-12-15 15:09:13,351 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.id = ?]
+[parameters: ('1',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\auth_routes.py", line 147, in get_current_user
+    user = User.query.get(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in get
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
+    return self.session._get_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.id = ?]
+[parameters: ('1',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:09:13,355 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:13] "[35m[1mGET /api/auth/me HTTP/1.1[0m" 500 -
+2025-12-15 15:09:15,905 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:15] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:09:16,168 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('lxnkee', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\auth_routes.py", line 128, in login
+    user = User.query.filter_by(username=data['username']).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('lxnkee', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:09:16,172 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:16] "[35m[1mPOST /api/auth/login HTTP/1.1[0m" 500 -
+2025-12-15 15:09:55,540 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:55] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:09:55,859 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('lxnkee', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\auth_routes.py", line 128, in login
+    user = User.query.filter_by(username=data['username']).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('lxnkee', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:09:55,870 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:09:55] "[35m[1mPOST /api/auth/login HTTP/1.1[0m" 500 -
+2025-12-15 15:10:37,505 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:10:37] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2025-12-15 15:10:37,822 - __main__ - ERROR - Unexpected error: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('lxnkee', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\routes\auth_routes.py", line 78, in register
+    if User.query.filter_by(username=data['username']).first():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\lanke\Desktop\enifeshts\backend\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.role AS users_role, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('lxnkee', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-15 15:10:37,824 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:10:37] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 500 -
+2025-12-15 15:10:57,984 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 15:10:57,984 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 15:10:57,986 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 15:11:00,171 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 15:11:00,177 - werkzeug - INFO -  * Debugger PIN: 360-748-911
+2025-12-15 15:11:05,841 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:05] "GET / HTTP/1.1" 200 -
+2025-12-15 15:11:15,407 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:15] "GET /health HTTP/1.1" 200 -
+2025-12-15 15:11:24,842 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:24] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:11:25,097 - routes.auth_routes - WARNING - Failed login attempt for username: lxnkee
+2025-12-15 15:11:25,097 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:25] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-15 15:11:49,981 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:49] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2025-12-15 15:11:50,534 - routes.auth_routes - INFO - New user registered: lxnkee with role: user
+2025-12-15 15:11:50,538 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:50] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-12-15 15:11:51,532 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:51] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:11:52,074 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 15:11:52,075 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:11:52,108 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:11:52,411 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:11:52,411 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:11:52,412 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:11:52,417 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:11:52,429 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:11:52,755 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:11:52,773 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:11:52] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:41,596 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:41] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:12:41,597 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:41] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:12:41,847 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:41] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:12:41,907 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:41] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:12:42,158 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:42,158 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:42,159 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:42,217 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:42,219 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:42,469 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:42,470 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:42,531 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:42] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:43,744 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:43] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:12:44,059 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:44] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:12:44,190 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:44] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:44,191 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:44] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:44,506 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:44] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:44,510 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:44] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:49,118 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:12:49,596 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 15:12:49,597 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:12:49,624 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:49,943 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:49,945 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:49,945 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:49,950 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:49] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:50,258 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:50] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:50,266 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:50] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:50,570 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:50] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:54,734 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:54] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:12:55,230 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 15:12:55,231 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:12:55,254 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:55,561 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:55,563 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:55,563 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:55,570 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:55,883 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:12:55,886 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:55] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:12:56,193 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:12:56] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:09,027 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 15:13:09,027 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 15:13:09,028 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 15:13:11,714 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 15:13:11,724 - werkzeug - INFO -  * Debugger PIN: 360-748-911
+2025-12-15 15:13:14,051 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:13:14,526 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 15:13:14,526 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:13:14,552 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:14,863 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:14,863 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:14,864 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:14,869 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:14] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:15,192 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:15] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:15,193 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:15] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:15,514 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:15] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:35,163 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:35] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:13:35,164 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:35] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:13:35,427 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:35] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:13:35,472 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:35] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:13:36,281 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:36] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:13:36,810 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 15:13:36,811 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:36] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:13:36,860 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:36] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:37,139 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:37,142 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:37,143 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:37,148 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:37,173 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:13:37,462 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:13:37,463 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:13:37] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:14:53,895 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:14:53] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:14:53,896 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:14:53] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:14:54,145 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:14:54] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:14:54,204 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:14:54] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:15:45,689 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:15:45] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:15:45,996 - routes.auth_routes - WARNING - Failed login attempt for username: adminuser
+2025-12-15 15:15:45,997 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:15:45] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-15 15:15:51,046 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:15:51] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:15:51,359 - routes.auth_routes - WARNING - Failed login attempt for username: adminuser
+2025-12-15 15:15:51,360 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:15:51] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-15 15:16:38,805 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:16:38] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:16:39,114 - routes.auth_routes - WARNING - Failed login attempt for username: adminuser
+2025-12-15 15:16:39,115 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:16:39] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-15 15:18:52,792 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 15:18:52,793 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 15:18:52,796 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 15:18:54,984 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 15:18:54,990 - werkzeug - INFO -  * Debugger PIN: 122-727-266
+2025-12-15 15:19:07,184 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:19:07] "GET / HTTP/1.1" 200 -
+2025-12-15 15:19:18,505 - __main__ - INFO - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-15 15:19:18,505 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:19:18] "[33mGET /expenses HTTP/1.1[0m" 404 -
+2025-12-15 15:19:39,692 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:19:39] "[32mGET /api/expenses HTTP/1.1[0m" 308 -
+2025-12-15 15:19:39,704 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:19:39] "[31m[1mGET /api/expenses/ HTTP/1.1[0m" 401 -
+2025-12-15 15:20:17,224 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:17] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:20:17,225 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:17] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:20:17,481 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:17] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:20:17,539 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:17] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-15 15:20:26,353 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:26] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:20:26,902 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-15 15:20:26,903 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:26] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-15 15:20:26,939 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:26] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:20:27,247 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:20:27,248 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:20:27,249 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:20:27,262 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:20:27,580 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-15 15:20:27,582 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-15 15:20:27,889 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 15:20:27] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:34:50,390 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-31 15:34:50,391 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-31 15:34:50,393 - werkzeug - INFO -  * Restarting with stat
+2025-12-31 15:34:52,719 - werkzeug - WARNING -  * Debugger is active!
+2025-12-31 15:34:52,726 - werkzeug - INFO -  * Debugger PIN: 208-329-620
+2025-12-31 15:35:31,801 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:35:31] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-31 15:35:31,802 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:35:31] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-31 15:35:32,051 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:35:32] "[31m[1mGET /api/auth/me HTTP/1.1[0m" 422 -
+2025-12-31 15:35:32,113 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:35:32] "[31m[1mGET /api/auth/me HTTP/1.1[0m" 422 -
+2025-12-31 15:43:15,278 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:43:15] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:43:15,551 - routes.auth_routes - WARNING - Failed login attempt for username: lxnkee
+2025-12-31 15:43:15,552 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:43:15] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-31 15:43:18,875 - routes.auth_routes - WARNING - Failed login attempt for username: lxnkee
+2025-12-31 15:43:18,876 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:43:18] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-31 15:43:19,971 - routes.auth_routes - WARNING - Failed login attempt for username: lxnkee
+2025-12-31 15:43:19,972 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:43:19] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-12-31 15:44:29,357 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:29] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2025-12-31 15:44:29,880 - routes.auth_routes - INFO - New user registered: lxnkee with role: user
+2025-12-31 15:44:29,883 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:29] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-12-31 15:44:35,110 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:44:35,647 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-31 15:44:35,648 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:44:35,671 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:44:35,984 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:44:35,985 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:44:35,985 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:44:35,989 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:44:35,996 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:35] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:44:36,313 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:36] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:44:36,622 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:44:36] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:45:43,855 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:45:43] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:45:44,119 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-31 15:45:44,136 - routes.expense_routes - INFO - Expense created successfully: ID 1 for user 1
+2025-12-31 15:45:44,137 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:45:44] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-31 15:45:44,167 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:45:44] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:45:44,448 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:45:44] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:45:44,451 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:45:44] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:47:45,771 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:45] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:47:46,240 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-31 15:47:46,240 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:47:46,256 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:47:46,569 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:47:46,569 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:47:46,571 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:47:46,573 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:47:46,886 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:47:46,889 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:46] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:47:47,196 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:47:47] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:24,350 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:24] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:48:24,846 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-31 15:48:24,846 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:24] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-31 15:48:24,864 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:24] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:48:25,177 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:25,177 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:48:25,178 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:25,180 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:48:25,491 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:48:25,493 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:25,814 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:25] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:50,235 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:50] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 15:48:50,502 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-31 15:48:50,508 - routes.expense_routes - INFO - Expense created successfully: ID 2 for user 1
+2025-12-31 15:48:50,509 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:50] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-31 15:48:50,551 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:50] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:50,836 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:50] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 15:48:50,843 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 15:48:50] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 16:19:56,674 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:56] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-31 16:19:56,675 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:56] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-31 16:19:56,926 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:56] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-31 16:19:56,985 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:56] "GET /api/auth/me HTTP/1.1" 200 -
+2025-12-31 16:19:57,247 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 16:19:57,248 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 16:19:57,250 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 16:19:57,308 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 16:19:57,313 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 16:19:57,572 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 16:19:57,575 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 16:19:57,634 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 16:19:57] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 17:04:59,361 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:04:59] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-31 17:04:59,363 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:04:59] "OPTIONS /api/auth/me HTTP/1.1" 200 -
+2025-12-31 17:04:59,619 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:04:59] "[31m[1mGET /api/auth/me HTTP/1.1[0m" 401 -
+2025-12-31 17:04:59,680 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:04:59] "[31m[1mGET /api/auth/me HTTP/1.1[0m" 401 -
+2025-12-31 17:05:08,057 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-31 17:05:08,620 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-31 17:05:08,621 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-31 17:05:08,640 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 17:05:08,960 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 17:05:08,961 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 17:05:08,961 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 17:05:08,967 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:08] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 17:05:09,285 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:09] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 17:05:09,288 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:09] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 17:05:09,598 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 17:05:09] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:43:36,360 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:36] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-12-31 19:43:36,693 - routes.auth_routes - INFO - Successful login for user: lxnkee
+2025-12-31 19:43:36,695 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:36] "POST /api/auth/login HTTP/1.1" 200 -
+2025-12-31 19:43:36,725 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:36] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:43:37,032 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:43:37,033 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:43:37,034 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:43:37,045 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:43:37,347 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:43:37,352 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:43:37,658 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:43:37] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:45:28,465 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:45:28] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:45:28,726 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-31 19:45:28,781 - routes.expense_routes - INFO - Expense created successfully: ID 3 for user 1
+2025-12-31 19:45:28,783 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:45:28] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-31 19:45:28,792 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:45:28] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:45:29,094 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:45:29] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:45:29,407 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:45:29] "GET /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:46:00,176 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:46:00] "OPTIONS /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:46:00,496 - routes.expense_routes - INFO - Creating expense for user 1
+2025-12-31 19:46:00,502 - routes.expense_routes - INFO - Expense created successfully: ID 4 for user 1
+2025-12-31 19:46:00,503 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:46:00] "[35m[1mPOST /api/expenses/ HTTP/1.1[0m" 201 -
+2025-12-31 19:46:00,735 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:46:00] "GET /api/expenses/ HTTP/1.1" 200 -
+2025-12-31 19:46:00,811 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:46:00] "OPTIONS /api/expenses/summary HTTP/1.1" 200 -
+2025-12-31 19:46:00,818 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 19:46:00] "GET /api/expenses/summary HTTP/1.1" 200 -
