@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { expenseAPI, analyticsAPI, authAPI } from '../services/api';
+import { expenseAPI, analyticsAPI } from '../services/api';
 import ExpenseForm from '../components/ExpenseForm';
 import ExpenseList from '../components/ExpenseList';
 import SummaryCards from '../components/SummaryCards';
